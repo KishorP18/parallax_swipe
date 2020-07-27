@@ -1,6 +1,7 @@
 # parallax_swipe
 
-A new Flutter application.
+Parallax Swipe example.
+![alt text](https://github.com/KishorP18/parallax_swipe/blob/master/assets/preview.png?raw=true)
 
 ## Getting Started
 
