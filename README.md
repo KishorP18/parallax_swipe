@@ -1,7 +1,7 @@
 # parallax_swipe
 
 Parallax Swipe example.
-![Alt text]("assets/preview.png?raw=true")
+![Alt text](parallax_swipe/assets/preview.png?raw=true)
 
 ## Getting Started
 
