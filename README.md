@@ -1,7 +1,7 @@
 # parallax_swipe
 
 Parallax Swipe example.
-![Alt text](parallax_swipe/assets/preview.png?raw=true)
+![alt text](https://github.com/KishorP18/parallax_swipe/blob/master/assets/preview.png?raw=true)
 
 ## Getting Started
 
