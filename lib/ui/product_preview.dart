@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:parallax_swipe/product_model.dart';
+import 'package:parallax_swipe/route_const.dart';
 import 'package:parallax_swipe/ui/product_details.dart';
 import 'package:parallax_swipe/util/const_util.dart';
 
@@ -19,19 +21,17 @@ class ProductPreview extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: InkWell(
         onTap: () {
-          Navigator.push(
-              context,
-              MaterialPageRoute<void>(
-                  builder: (context) => ProductDetails(
-                        index: pageIndex,
-                        tag: pageIndex.toString(),
-                      )));
-        },
+          return Navigator.pushNamed(context, RouteConst.detailScreen,arguments:ProductDetailsModel(index: pageIndex,
+              tag: pageIndex.toString()));
+          },
         child: Hero(
           tag: pageIndex,
           flightShuttleBuilder: (flightContext,animation,direction,fromContext,toContext){
-            return SvgPicture.asset(
-                ConstUtil.getImagePreviewSvgPath(pageIndex));
+            return ScaleTransition(
+              scale: Tween<double>(begin: 0.0,end: 1.0).animate(animation),
+              child: SvgPicture.asset(
+                  ConstUtil.getImagePreviewSvgPath(pageIndex)),
+            );
           },
           child: Stack(
             children: <Widget>[

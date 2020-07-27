@@ -5,3 +5,9 @@ class ProductModel{
 
   ProductModel({this.price="",this.name="",this.details=""});
 }
+
+class ProductDetailsModel{
+  int index;
+  String tag;
+  ProductDetailsModel({this.index,this.tag});
+}

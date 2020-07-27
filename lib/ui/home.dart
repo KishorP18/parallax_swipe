@@ -22,7 +22,7 @@ class _HomeState extends State<Home> {
    void initState() {
      super.initState();
      _pageController = PageController(viewportFraction: 0.8);
-     timeDilation=3.0;
+
    }
 
    @override
